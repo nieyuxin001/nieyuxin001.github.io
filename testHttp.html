@@ -103,7 +103,7 @@
 	 } ; //End httpLoader
 	 
 //用httpLoader模型读入文本文件，用print函数实现输出
-httpLoader.request('txt/paper.txt' ) ; //模型以同步代码方式启动，但内部http请求全部改成异步，可以适应任何糟糕环境的慢速网络状况，模型内部复杂内部极其精巧，但使用却非常简单。
+httpLoader.request('txt/cet6.txt' ) ; //模型以同步代码方式启动，但内部http请求全部改成异步，可以适应任何糟糕环境的慢速网络状况，模型内部复杂内部极其精巧，但使用却非常简单。
 setTimeout(() => { //httpLoader.textLines内的数据建立时间是不确定的，但肯定需要等，本例延迟3s输出paper.txt 中的文本
      for(let line of httpLoader.textContent){
      print(line) ;
